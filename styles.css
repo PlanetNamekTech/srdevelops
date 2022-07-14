@@ -133,6 +133,11 @@ hr {
   color: whitesmoke;
   font-weight: 700;
 }
+.button:hover {
+  color:whitesmoke;
+  background-color: #4F359B;
+  transition: all 300ms ease-in-out;
+}
 
 /* Projects Styles */
 .main-title {
@@ -152,6 +157,7 @@ hr {
   text-align: center;
   color: whitesmoke;
   padding: 1em;
+  margin-bottom: 2em;
 }
 .project-title {
   font-size: 2.5rem;
@@ -167,8 +173,25 @@ hr {
   font-size: 1.5rem;
   line-height: 1.5;
   padding: .5em;
+  margin-bottom: 1.5rem;
 }
 .code-button {
   margin-top: .5em;
   justify-content: space-evenly;
+  text-align: center;
+}
+.code-button-source {
+  padding: 0;
+  border: none;
+}
+.code-button-source > a {
+  display: inline-block;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.code-button-source >a:hover, .code-button-source >a:focus {
+  background-color: #4F359B;
+  color: whitesmoke;
+  transition: all 300ms ease-in-out;
 }
