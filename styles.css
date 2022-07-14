@@ -26,13 +26,7 @@ img, picture {
   max-width: 100%;
   display: block;
 }
-/* Remove animations for people who turned them off */
-*,*::before,*::after {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-  scroll-behavior: auto !important;
-}
+
 /* Utility classes */
 .flex {
   display: flex;
@@ -47,6 +41,14 @@ img, picture {
   padding-inline: 2em;
   margin-inline: auto;
   max-width: 80rem;
+}
+.button {
+  padding: 1rem;
+  color: #4F359B;
+  background-color: #E7E4F2;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 
 /* Nav styles */
@@ -63,7 +65,8 @@ nav {
 .nav__list {
     width: 12rem;
     height: 100vh;
-    background-color: #64648b;
+    background-color: #3D3D55;
+    border: 1px solid whitesmoke;
     position: fixed;
     top: 0;
     right: -26rem;
@@ -72,7 +75,7 @@ nav {
     align-items: center;
     justify-content: center;
     z-index: 1500;
-    transition: right 4650ms ease-in-out;
+    transition: right 650ms ease-in-out;
 }
 .nav__item {
   margin: 2rem 0;
@@ -86,7 +89,7 @@ nav {
 .nav__list.active {
   right: 0;
 }
-/* temp class */
+
 .menu-icons i {
   font-size: 3rem;
   color:white;
@@ -98,4 +101,31 @@ nav {
   position: absolute;
   top: 1rem;
   left: 1.5rem;
+}
+
+/* Hero Styles */
+body {
+  background-color: #3D3D55;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+hr {
+  margin-bottom: 3rem;
+}
+.hero {
+  margin-top: 5em;
+  min-height: 90vh;
+  padding: 1em;
+  text-align: center;
+}
+.hero h1 {
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  font-weight: 700;
 }
