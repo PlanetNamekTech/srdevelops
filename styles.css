@@ -26,6 +26,9 @@ img, picture {
   max-width: 100%;
   display: block;
 }
+a {
+  text-decoration: none;
+}
 
 /* Utility classes */
 .flex {
@@ -49,6 +52,7 @@ img, picture {
   border-radius: 5px;
   font-size: 1.6rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Nav styles */
@@ -128,4 +132,43 @@ hr {
   margin-bottom: 2rem;
   color: whitesmoke;
   font-weight: 700;
+}
+
+/* Projects Styles */
+.main-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  color: whitesmoke;
+  margin-bottom: 1em;
+}
+.proj-img {
+  margin: 0 auto;
+  max-width: 80%;
+  max-height: 40vh;
+  border-radius: 6px;
+}
+.project-body {
+  text-align: center;
+  color: whitesmoke;
+  padding: 1em;
+}
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: .2ch;
+  text-transform: uppercase;
+  padding: .5em;
+}
+.project-subtitle {
+  font-size: 1.8rem;
+}
+.proj-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: .5em;
+}
+.code-button {
+  margin-top: .5em;
+  justify-content: space-evenly;
 }
