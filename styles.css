@@ -18,6 +18,9 @@ h6,
 p {
     font-weight: 400;
 }
+ul {
+  list-style: none;
+}
 /* Make images easier to work with */
 img, picture {
   max-width: 100%;
@@ -49,17 +52,36 @@ img, picture {
 /* Nav styles */
 nav {
   background-color: #3D3D55;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav__logo {
   height: 150px;
-  width: auto;
   margin-bottom: -1em;
   margin-top: -1em;
 }
 .nav__list {
-  display: none;
+    width: 12rem;
+    height: 100vh;
+    background-color: #64648b;
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: right 4650ms ease-in-out;
+}
+.nav__item {
+  margin: 2rem 0;
+}
+.nav__link {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .nav__list.active {
   right: 0;
@@ -69,13 +91,11 @@ nav {
   font-size: 3rem;
   color:white;
   cursor: pointer;
-}
-.ion-md-close {
-  display: none;
+  margin-right: 1em;
 }
 /* Menu opening and closing */
-/* .close {
+.close {
   position: absolute;
-  top:1rem;
+  top: 1rem;
   left: 1.5rem;
-} */
+}
