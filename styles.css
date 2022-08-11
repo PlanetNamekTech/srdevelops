@@ -110,6 +110,42 @@ nav {
   left: 1.5rem;
 }
 
+/* Sidebar Styles */
+.sidebar {
+  /* padding-right: 3em; */
+}
+.svg-icons {
+  height: 30px;
+  width: 30px;
+  /* temp style */
+  color: white;
+}
+.svg-icons:hover {
+  height: 2.5rem;
+  width: 2.5rem;
+  transform: translateX(-40%);
+}
+.beforeScroll {
+  opacity: 0;
+}
+.afterScroll {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: .5%;
+  top: 50%;
+  background-color: black;
+  padding: .3rem;
+  border-radius: 10%;
+}
+.sidebar__list > a {
+  padding: .2rem .0;
+}
 /* Hero Styles */
 body {
   background-color: #3D3D55;

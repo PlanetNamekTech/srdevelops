@@ -13,3 +13,12 @@ selectElement('.close').addEventListener('click', () => {
 navList.forEach(link => {
   link.addEventListener('click', () => selectElement('.nav__list').classList.remove('active'))
 })
+
+// Script for appearance of sidebar
+const body = document.querySelector('body');
+const sidebar = document.querySelector('.sidebar');
+
+body.onscroll = () => {
+    sidebar.classList.remove('beforeScroll');
+    sidebar.classList.add('afterScroll');
+}
