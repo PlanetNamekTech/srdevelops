@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>SRDevelops</title>
@@ -110,7 +111,7 @@
             d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.54ZM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0Z"
             clip-rule="evenodd" />
         </svg></a> -->
-      <a href="" title="Email Me"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icons" aria-hidden="true" role="img"
+      <a href="#contact" title="Email Me"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icons" aria-hidden="true" role="img"
           preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
           <path fill="currentColor"
             d="M32 6H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-1.54 22H5.66l7-7.24l-1.44-1.39L4 26.84V9.52l12.43 12.37a2 2 0 0 0 2.82 0L32 9.21v17.5l-7.36-7.36l-1.41 1.41ZM5.31 8h25.07L17.84 20.47Z"
@@ -123,6 +124,18 @@
   <!-- About Section -->
   <section class="about" id="about">
     <h2>About Me</h2>
+    <p></p>
+  </section>
+  <!-- Contact Form -->
+  <section class="contact container" id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/43cecd44d86fd1fb2bae47a8e150fdf2" method="POST" class="contact-form">
+      <!-- <input type="text" name="name" required> -->
+      <input class="input" type="email" name="email" placeholder="Email Address" required>
+      <input class="input" type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+      <textarea class="input" name="name" id="" cols="30" rows="10"></textarea>
+      <button class="button" type="submit">Send</button>
+    </form>
   </section>
 
   <script src="scripts.js"></script>
