@@ -143,6 +143,9 @@ nav {
   padding: .3rem;
   border-radius: 10%;
 }
+.sidebar__list:hover {
+  padding: 1rem;
+}
 .sidebar__list > a {
   padding: .2rem .0;
 }
@@ -241,11 +244,17 @@ hr {
   color: white;
   text-align: center;
   margin-top: 10em;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
   height: 50vh;
+  padding: 2em;
 }
 .about > h2 {
   font-size: 4rem;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+.about > p {
+  font-size: 2rem;
 }
 
 /* Contact Styles */
