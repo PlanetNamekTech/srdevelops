@@ -159,7 +159,7 @@ h1 {
   color: whitesmoke;
   font-size: 3rem;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 hr {
   margin-bottom: 3rem;
@@ -245,7 +245,7 @@ hr {
   text-align: center;
   margin-top: 10em;
   margin-bottom: 10em;
-  height: 50vh;
+  min-height: 50vh;
   padding: 2em;
 }
 .about > h2 {
@@ -255,6 +255,7 @@ hr {
 }
 .about > p {
   font-size: 2rem;
+  line-height: 3.5rem;
 }
 
 /* Contact Styles */
@@ -279,3 +280,28 @@ hr {
   border-radius: 5px;
 }
 
+/* Media Queries */
+
+/* Landscape Tablets and Up */
+@media screen and (min-width: 768px){
+  body {
+    font-size: 1.1rem;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .nav__list {
+    flex-direction: row;
+    gap: 3rem;
+    border: none;
+    right: 80;
+    height: auto;
+    width: auto;
+  }
+  .nav__link:hover {
+    color: rgb(177, 177, 177);
+  }
+  .menu-icons {
+    display: none;
+  }
+}
