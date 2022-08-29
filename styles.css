@@ -273,7 +273,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .input {
   font-size: 2rem;
@@ -295,7 +295,7 @@ hr {
     gap: 3rem;
     border: none;
     right: 80;
-    height: auto;
+    height: 70;
     width: auto;
   }
   .nav__link:hover {
@@ -303,5 +303,8 @@ hr {
   }
   .menu-icons {
     display: none;
+  }
+  .contact {
+    padding: 2em;
   }
 }
