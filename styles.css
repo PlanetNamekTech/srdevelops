@@ -279,6 +279,11 @@ hr {
   font-size: 2rem;
   border-radius: 5px;
 }
+.submit-button {
+  padding: 1em;
+  width: 50%;
+  margin: 0 auto;
+}
 
 /* Media Queries */
 
